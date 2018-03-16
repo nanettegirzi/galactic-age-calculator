@@ -67,4 +67,28 @@ export class Age {
     }
     return earthAverage;
   }
+
+  lifeExpectancyOnMercury(){
+    let earthLife = this.lifeExpectancyOnEarth();
+    let mercuryLife = Math.floor(earthLife / 0.24);
+    return mercuryLife;
+  }
+
+  lifeExpectancyOnVenus(){
+    let earthLife = this.lifeExpectancyOnEarth();
+    let venusLife = Math.floor(earthLife / 0.62);
+    return venusLife;
+  }
+
+  lifeExpectancyOnMars(){
+    let earthLife = this.lifeExpectancyOnEarth();
+    let marsLife = Math.floor(earthLife / 1.88);
+    return marsLife;
+  }
+
+  lifeExpectancyOnJupiter(){
+    let earthLife = this.lifeExpectancyOnEarth();
+    let jupiterLife = Math.floor(earthLife / 11.86);
+    return jupiterLife;
+  }
 }

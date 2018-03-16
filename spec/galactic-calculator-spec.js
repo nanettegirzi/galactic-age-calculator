@@ -35,6 +35,21 @@ describe ('Age', function(){
     expect(newAge.lifeExpectancyOnEarth()).toEqual(78)
   });
 
+  it('should calculate life expectancy on Mercury', function(){
+    expect(newAge.lifeExpectancyOnMercury()).toEqual(325)
+  });
+
+  it('should calculate life expectancy on Venus', function(){
+    expect(newAge.lifeExpectancyOnVenus()).toEqual(125)
+  });
+
+  it('should calculate life expectancy on Mars', function(){
+    expect(newAge.lifeExpectancyOnMars()).toEqual(41)
+  });
+
+  it('should calculate life expectancy on Jupiter', function(){
+    expect(newAge.lifeExpectancyOnJupiter()).toEqual(6)
+  });
 
 
 
