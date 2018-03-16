@@ -21,27 +21,27 @@ export class Age {
     return ageInYears;
   }
 
-  ageOnMercury() {
+  ageMercury() {
     let mercuryAge = Math.floor(this.calculateAge() / 0.24)
     return mercuryAge;
   }
 
-  ageOnVenus() {
+  ageVenus() {
     let mercuryAge = Math.floor(this.calculateAge() / 0.62)
     return mercuryAge;
   }
 
-  ageOnMars() {
+  ageMars() {
     let mercuryAge = Math.floor(this.calculateAge() / 1.88)
     return mercuryAge;
   }
 
-  ageOnJupiter() {
+  ageJupiter() {
     let mercuryAge = Math.floor(this.calculateAge() / 11.86)
     return mercuryAge;
   }
 
-  lifeExpectancyOnEarth(){
+  lifeExpectancyEarth(){
     let earthAverage = 71;
     // average life expectancy on earth is around 71 years according to Wikipedia. Male average is 68yrs and female average is 72 years.
     if (this.gender === 'male') {
@@ -68,23 +68,48 @@ export class Age {
     return earthAverage;
   }
 
-  lifeExpectancyOnMercury(){
-    let mercuryLife = Math.floor(this.lifeExpectancyOnEarth() / 0.24);
+  lifeExpectancyMercury(){
+    let mercuryLife = Math.floor(this.lifeExpectancyEarth() / 0.24);
     return mercuryLife;
   }
 
-  lifeExpectancyOnVenus(){
-    let venusLife = Math.floor(this.lifeExpectancyOnEarth() / 0.62);
+  lifeExpectancyVenus(){
+    let venusLife = Math.floor(this.lifeExpectancyEarth() / 0.62);
     return venusLife;
   }
 
-  lifeExpectancyOnMars(){
-    let marsLife = Math.floor(this.lifeExpectancyOnEarth() / 1.88);
+  lifeExpectancyMars(){
+    let marsLife = Math.floor(this.lifeExpectancyEarth() / 1.88);
     return marsLife;
   }
 
-  lifeExpectancyOnJupiter(){
-    let jupiterLife = Math.floor(this.lifeExpectancyOnEarth() / 11.86);
+  lifeExpectancyJupiter(){
+    let jupiterLife = Math.floor(this.lifeExpectancyEarth() / 11.86);
     return jupiterLife;
+  }
+
+  lifeLeftEarth(){
+    let yearsLeft = Math.floor(this.lifeExpectancyEarth() - this.calculateAge())
+    return yearsLeft;
+  }
+
+  lifeLeftMercury(){
+    let yearsLeft = Math.floor(this.lifeExpectancyMercury() - this.ageMercury())
+    return yearsLeft;
+  }
+
+  lifeLeftVenus(){
+    let yearsLeft = Math.floor(this.lifeExpectancyVenus() - this.ageVenus())
+    return yearsLeft;
+  }
+
+  lifeLeftMars(){
+    let yearsLeft = Math.floor(this.lifeExpectancyMars() - this.ageMars())
+    return yearsLeft;
+  }
+
+  lifeLeftJupiter(){
+    let yearsLeft = Math.floor(this.lifeExpectancyJupiter() - this.ageJupiter())
+    return yearsLeft;
   }
  }

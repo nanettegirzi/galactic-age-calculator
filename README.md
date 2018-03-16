@@ -1,4 +1,4 @@
-# Galactic Age Calculator
+# Super Galactic Age Calculator
 
 #### JavaScript Epicodus week 1 project, 03/16/2018
 
