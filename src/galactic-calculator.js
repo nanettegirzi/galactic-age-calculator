@@ -112,4 +112,11 @@ export class Age {
     let yearsLeft = Math.floor(this.lifeExpectancyJupiter() - this.ageJupiter())
     return yearsLeft;
   }
+
+  overLifeExpectancy(){
+    if  (Math.floor(this.calculateAge() > this.lifeExpectancyEarth())) {
+      return "Good job for still being alive!!"
+    }
+
+  }
  }

@@ -69,6 +69,6 @@ describe ('Age', function(){
 
   it('should calculate life left on Jupiter', function(){
     expect(newAge.lifeLeftJupiter()).toEqual(3)
-  })
+  })  
 
 });
