@@ -21,5 +21,23 @@ export class Age {
     return ageInYears;
   }
 
+    ageOnMercury() {
+      let mercuryAge = Math.floor(this.calculateAge() / 0.24)
+      return mercuryAge;
+    }
 
+    ageOnVenus() {
+      let mercuryAge = Math.floor(this.calculateAge() / 0.62)
+      return mercuryAge;
+    }
+
+    ageOnMars() {
+      let mercuryAge = Math.floor(this.calculateAge() / 1.88)
+      return mercuryAge;
+    }
+
+    ageOnJupiter() {
+      let mercuryAge = Math.floor(this.calculateAge() / 11.86)
+      return mercuryAge;
+    }
 }
