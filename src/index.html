@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Super Galactic Age Calculator</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">SUPER GALACTIC AGE CALCULATOR</h1>
+      <hr>
+      <p class="lead">Determine your age, life expectancy and years left to live on different planets</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="card" id="info">
+          <div class="card-header">
+            Your Info
+          </div>
+          <div class="card-body">
+            <form id="age-form">
+              <div class="form-group">
+                <label for="birthday">Please enter your birthday</label>
+                <input class = "form-control" id="birthday" name="birthdaty" type="date" required><br>
+              </div>
+              <div class="form-group">
+                <label for="gender">Please enter your gender</label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female" required> Female<br>
+              </div>
+              <div class="form-group">
+                <label for="stress">What is your stress level?</label>
+                <select id="stress" name="stress">
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select><br>
+              </div>
+              <div class="form-group">
+                <label for="smoker">Are you a cigarette smoker?</label>
+                <input type="radio" name="smoker" value="yes" required>Yes
+                <input type="radio" name="smoker" value="no" required>No<br>
+              </div>
+              <div class="form-group">
+                <label for="activity">Do you exercise at least 4 times per week?</label>
+                <input type="radio" name="activity" value="yes" required>Yes
+                <input type="radio" name="activity" value="no" required>No<br>
+              </div>
+              <button class="btn btn-info" type="submit">Submit</button>
+              <button class="btn btn-warning" type="reset" id="resetButton">Reset</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-sm-5">
+        <div class="card" id="results">
+          <div class="card-header">
+            Results
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Your age around the Solar System:</h5>
+            <p class="card-text">Age on Earth: <span id="ageEarth"></span> years.</p>
+            <p class="card-text">Age on Mercury: <span id="ageMercury"></span> years.</p>
+            <p class="card-text">Age on Venus: <span id="ageVenus"></span> years.</p>
+            <p class="card-text">Age on Mars: <span id="ageMars"></span> years.</p>
+            <p class="card-text">Age on Jupiter: <span id="ageJupiter"></span> years.</p>
+            <hr>
+
+            <h5 class="card-title">Your life expectancy around the Solar System:</h5>
+            <p class="card-text">Life expectancy on Earth: <span id="lifeEarth"> years.</span></p>
+            <p class="card-text">Life expectancy on Mercury: <span id="lifeMercury"></span> years.</p>
+            <p class="card-text">Life expectancy on Venus: <span id="lifeVenus"> years.</span></p>
+            <p class="card-text">Life expectancy on Mars: <span id="lifeMars"> years.</span></p>
+            <p class="card-text">Life expectancy on Jupiter: <span id="lifeJupiter"> years.</span></p>
+            <hr>
+
+            <h5 class="card-title">Your time left around the Solar System:</h5>
+            <p class="card-text">You have <span id="timeEarth"></span> years left on Earth.</p>
+            <p class="card-text">You have <span id="timeMercury"></span> years left on Mercury.</p>
+            <p class="card-text">You have <span id="timeVenus"></span> years left on Venus.</p>
+            <p class="card-text">You have <span id="timeMars"></span> years left on Mars.</p>
+            <p class="card-text">You have <span id="timeJupiter"></span> years left on Jupiter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

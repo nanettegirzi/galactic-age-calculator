@@ -115,7 +115,7 @@ export class Age {
 
   overLifeExpectancy(){
     if  (Math.floor(this.calculateAge() > this.lifeExpectancyEarth())) {
-      return "Good job for still being alive!!"
+      return "Good job for still being alive!!";
     }
 
   }

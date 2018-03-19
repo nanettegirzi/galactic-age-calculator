@@ -1,0 +1,30 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1502895907098-247038bfc175?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b443bfa60b45bc58dfd19a2a9f51910b&auto=format&fit=crop&w=2550&q=80);
+  background-repeat: no-repeat;
+
+
+}
+
+.jumbotron {
+  background: rgba(245, 245, 245, 0.8)!important;
+  text-align: center;
+  margin-top: 50px;
+  font-family: impact;
+}
+
+#info {
+  background: rgba(245, 245, 245, 0.8)!important;
+}
+
+#results {
+  background: rgba(245, 245, 245, 0.8)!important;
+  display: none;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.card-header {
+  font-weight: bolder;
+}
