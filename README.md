@@ -11,12 +11,30 @@ This application calculates the users age on different planets based on solar ye
 
 ## Setup/Installation Requirements
 
+This application checks whether or not the users input is a haiku or not. It also auto generates haikus.
+
 Run the following commands in Terminal:
 
 * $ git clone
 * $ cd galactic-age-calculator
 * $ NPM install
 * $ NPM run start
+
+_ The home page of the application.
+![Home](src/img/home.png)
+
+_ User Enters Info
+![Info](src/img/input.png)
+
+_ User clicks submit button with no as smoking
+![No](src/img/no.png)
+
+_ User changes smoking to yes and expectancy and years left change.
+![No](src/img/yes.png)
+
+_ User changes clicks reset button.
+![No](src/img/reset.png)
+
 
 ## Specifications
 
