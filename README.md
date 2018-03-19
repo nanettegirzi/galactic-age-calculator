@@ -21,7 +21,7 @@ Run the following commands in Terminal:
 * $ NPM run start
 
 _ The home page of the application.
-![Home](src/img/home.png)
+![Home](src/img/hone.png)
 
 _ User Enters Info
 ![Info](src/img/input.png)
